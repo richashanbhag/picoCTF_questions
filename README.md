@@ -114,7 +114,7 @@ n:
 c:  
 6978640109945401095080063888724342171674419956931628378176717936442829583321957234096788363316508199839753631882002529786199716795103629230478798268549933300981518120792287228139584396009955441468661665539539401672028578028754359576171508620278794145566254227559072103063431966964494872689774635450807933508
 ## Hints
-What do you think about my pet?  [dachshund.jpg](![dachshund](https://github.com/richashanbhag/picoCTF_questions/assets/149705539/ff7c0462-f536-47b1-aa91-daa250c72e58))
+What do you think about my pet?  [dachshund.jpg]((https://github.com/richashanbhag/picoCTF_questions/assets/149705539/ff7c0462-f536-47b1-aa91-daa250c72e58))
 ## Approach
 With the help of powershell, we obtained the given data. The given data can be decrypted using Wiener attack. We can find out the flag with the help of the parametres using (Wiener attack)
 ## Commands
