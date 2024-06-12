@@ -118,6 +118,10 @@ What do you think about my pet?  [dachshund.jpg](![dachshund](https://github.com
 ## Approach
 With the help of powershell, we obtained the given data. The given data can be decrypted using Wiener attack. We can find out the flag with the help of the parametres using (Wiener attack)
 ## Commands
+```
 nc mercury.picoctf.net 30761
+```
 ## Flag
+```
 picoCTF{proving_wiener_1146084}
+```
