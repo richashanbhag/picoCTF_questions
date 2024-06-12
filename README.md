@@ -10,6 +10,8 @@ What do the flags mean?
 The flag is in the format PICOCTF{}  
 ## Approach
 With the help of the hint given, the first 7 flags represent PICOCTF. Then, the rest of the flags can be decoded using the naval flag code. 
+![image](https://github.com/richashanbhag/picoCTF_questions/assets/149705539/f4e25498-012d-475f-8d8b-f7871850fa90)
+
 ## Flag
 ```
 PICOCTF{F1AG5AND5TUFF}
