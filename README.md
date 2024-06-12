@@ -24,5 +24,34 @@ e: 3
 
 ciphertext (c): 2205316413931134031074603746928247799030155221252519872649649212867614751848436763801274360463406171277838056821437115883619169702963504606017565783537203207707757768473109845162808575425972525116337319108047893250549462147185741761825125 
 ## Hints
-[RSA Tutorial](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+1)[RSA Tutorial](https://en.wikipedia.org/wiki/RSA_(cryptosystem))  
+2)How could having too small an e affect the security of this 2048 bit key?  
+3)Make sure you don't lose precision, the numbers are pretty big (besides the e value)  
+## 3)transposition Trial
+## Description
+Our data got corrupted on the way here. Luckily, nothing got replaced, but every block of 3 got scrambled around! The first word seems to be three letters long, maybe you can use that to recover the rest of the message.  
+Download the corrupted message here.
+## Data provided
+heTfl g as iicpCTo{7F4NRP051N5_16_35P3X51N3_V6E5926A}4 
+## Hints
+Split the message up into blocks of 3 and see how the first block is scrambled
+## Approach
+As it is given in the description, that the first word is 3 letters long. If we change the position of letters in the first block of word 'heT', we can decode the transposition pattern. If we change the order of letters from'123' to '312', then 'heT' will become 'The'. Thus, if we follow the pattern '312', then we can decode the given text   
+We can write a python code to decode the rest of the given text. We need to create two lists, one list called 'c' which contains the cipher text and an other list 'f' which is empty. Then, with the help of a for loop, which iterates over the c list with a step of 3. It starts at index 0 and goes up to the length of c. We need to take block of 3 characters and then, change their positions from'123' to '312' and append this to the empty list 'f'. Then, we can join the elements in the list 'f' by using ''.join(list).
+## Commands 
+```
+c = list('heTfl g as iicpCTo{7F4NRP051N5_16_35P3X51N3_V6E5926A}4')
 
+f = []
+
+for i in range(0, len (c), 3):
+    f.append(c[i+2])
+    f.append(c[i])
+    f.append(c[i+1])
+
+print(''.join(f))
+```
+# Flag
+```
+picoCTF{7R4N5P051N6_15_3XP3N51V3_56E6924A}
+```
